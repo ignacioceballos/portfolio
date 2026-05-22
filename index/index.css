@@ -178,6 +178,18 @@ header {
     width: 200px;/*tamaño fijo*/
     border-radius: 8px;/*bordes suaves*/
 }
+.Tecnologias img{
+    filter: brightness(0) invert(1);/*esto hace que las imagenes sean blancas*/
+    width: 5%;
+    transition: 0.3s ease;
+    display: inline;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.Tecnologias img:hover{
+     filter: brightness(0) saturate(100%) invert(39%) sepia(96%) saturate(2407%) hue-rotate(338deg) brightness(100%) contrast(101%);
+}
 
 /*_______________________________________________________________________________________*/
 a[download] {/*selecciona los links que tengas el atributo dowload*/
@@ -214,11 +226,15 @@ a[download]:hover {
 
 
 
-.pie img {
-    width: 25px;/*tamaño de los logos*/
+.pie .link img {
+   filter: brightness(0) invert(1);/*esto hace que las imagenes sean blancas*/
+    width: 2%;
     margin-right: 8px;/*que tengan un espacio entre el logo y el texto*/
+     transition: 0.3s ease;
 }
-
+.pie .link img:hover{
+     filter: brightness(0) saturate(100%) invert(39%) sepia(96%) saturate(2407%) hue-rotate(338deg) brightness(100%) contrast(101%);
+}
 .link a {
     color: #f5f5f5;/*texto blanco*/
     text-decoration: none;/*sin subrayado*/
@@ -226,7 +242,7 @@ a[download]:hover {
 }
 
 .link a:hover {
-    color: #e11d2e;/*cambia de color cuando se pasa el mouse*/
+    color: #ff3b3b;/*cambia de color cuando se pasa el mouse*/
 }
 /*_____________________________________________________________________________________*/
 /*la palet de colores es:  
