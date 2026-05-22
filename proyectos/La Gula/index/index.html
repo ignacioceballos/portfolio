@@ -1,0 +1,169 @@
+<?php
+//Iniciar sesión solo si no hay ninguna activa, esto es para mostrar o no más cosas en el nav
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="D:\programacion\portfolio\proyectos\La Gula\index\index.css" />
+    <title>La Gula - Restaurant</title>
+  </head>
+  
+
+  <body>
+    <header class="main-header">
+  <div class="logo"><!--Imágen del logo que a su vez es un ancla que redirige al index-->
+    <a href="/index.php"
+        ><img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\logo.png" alt="Home" />
+    </a>
+    <div class="texto-logo"><!--Texto al lado del logo que indica en donde está el user-->
+      <h1>La Gula</h1>
+      <p>El mejor pecado capital</p>
+    </div>
+  </div>
+
+  <nav class="nav-bar">
+    <a href="/carta/carta.php">Carta</a>
+    <a href="#historia">Historia</a> <!--lleva a la misma página-->
+
+    <a href="D:\programacion\portfolio\proyectos\La Gula\perfil\perfil.php">Perfil</a>
+    <a href="D:\programacion\portfolio\proyectos\La Gula\ofertas\ofertaindex.php">Ofertas</a>
+    <a href="D:\programacion\portfolio\proyectos\La Gula\reseñas\reseñas.php">Reseñas</a>
+    <a href="D:\programacion\portfolio\proyectos\La Gula\reservas\reservas.php">Reserva</a>
+    <a href="D:\programacion\portfolio\proyectos\La Gula\carritosdecompras\carritodecompraslindo.php">Carrito</a>
+    <a href="D:\programacion\portfolio\proyectos\La Gula\iniciosesion\iniciosesion.php">Iniciar Sesión</a>
+
+  </nav>
+</header>
+    <div class="main-content">
+    <!--Carruseles alineados con tabla-->
+    <table align="center" cellpadding="10">
+      <tr>
+        <td>
+          <div class="carrusel">
+            <div class="imagenes">
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\p1.jpeg" alt="1" />
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\p2.jpg" alt="2" />
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\p3.jpg" alt="3" />
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="carrusel">
+            <div class="imagenes">
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\img 4.jpg" alt="1" />
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\img5.jpg" alt="2" />
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\img6.jpg" alt="3" />
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="carrusel">
+            <div class="imagenes">
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\img7.jpg" alt="1" />
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\img8.jpg" alt="2" />
+              <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\img9.avif" alt="3" />
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 id="historia" class="titulo">HISTORIA</h1> <!--Sección historia-->
+    <br>
+    <br>
+    <br>
+    <main class="historia-box">
+  <div class="historia-card izquierda"><!--Tarjetas con información que quedan flama-->
+    <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\historia1.jpg" alt="Origen"><!--Imágenes facheritas-->
+    <div class="texto">
+      <h2>Origen</h2>
+      <p><!--TEXTO-->
+        Hace más de una década, en el corazón de La Falda, nació La Gula. 
+        Un restaurante pensado para quienes creen que comer no es solo una 
+        necesidad, sino un verdadero placer. Todo comenzó con un grupo de amigos 
+        apasionados por la cocina internacional.
+      </p>
+    </div>
+  </div>
+
+  <div class="historia-card derecha">
+    <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\historia2.jpg" alt="Crecimiento">
+    <div class="texto">
+      <h2>Crecimiento</h2>
+      <p>
+        Con el tiempo, el restaurante fue creciendo. La calidad de los ingredientes 
+        y el ambiente acogedor lo convirtieron en un secreto bien guardado entre los 
+        amantes de la buena comida, transformando cada plato en una experiencia.
+      </p>
+    </div>
+  </div>
+
+  <div class="historia-card izquierda">
+    <img src="D:\programacion\portfolio\proyectos\La Gula\imagenes\historia3" alt="Actualidad">
+    <div class="texto">
+      <h2>Actualidad</h2>
+      <p>
+        Hoy en día, La Gula es un referente de la gastronomía gourmet. Su propuesta 
+        combina tradición e innovación, ofreciendo un viaje culinario donde cada visita 
+        es distinta, pero siempre inolvidable.
+      </p>
+    </div>
+  </div>
+<!--Frase épica del restaurant-->
+  <blockquote class="historia-cita">
+    “Más que un restaurante, La Gula es un viaje gastronómico donde tradición y sabor 
+    se encuentran para ofrecer un recuerdo inolvidable.”
+  </blockquote>
+</main>
+<!--Footer hermoso-->
+     <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Redes Sociales</h3><!--Apartado de redes sociales-->
+          <div class="redes-sociales">
+            <p>📸 Instagram: @LaGulaRestaurant</p>
+            <p>📘 Facebook: Restaurante La Gula</p>
+            <p>🐦 Twitter: @LaGulaRestaurant</p>
+          </div>
+        </div>
+   
+        <div class="footer-section"><!--Contacto-->
+          <h3>Contacto</h3>
+          <p>Correo: lagula@restaurante.com</p>
+          <p>Teléfono: +34 123 456 789</p>
+        </div>
+
+        <div class="footer-section"><!--Ubicación-->
+          <h3>Ubicación</h3>
+          <p>La Falda, Cordoba</p>
+          <p>Calle Sabores 123</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 La Gula. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+[
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "1983-07-25",
+        "correo": "agus@gmail.com",
+        "contrasena": "123456"
+    },
+    {
+        "nombre": "",
+        "apellido": "",
+        "fecha_nac": "",
+        "correo": "",
+        "contrasena": ""
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-18",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-18",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-18",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-05",
+        "correo": "agus@gmail.com",
+        "contrasena": "123456"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "132456"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "132456"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-04",
+        "correo": "agus@gmail.com",
+        "contrasena": "132456"
+    },
+    {
+        "nombre": "brunito",
+        "apellido": "messi",
+        "fecha_nac": "2025-10-10",
+        "correo": "tino@gmail.com",
+        "contrasena": "23232323423423423234"
+    },
+    {
+        "nombre": "brunito",
+        "apellido": "messi",
+        "fecha_nac": "2025-10-10",
+        "correo": "tino@gmail.com",
+        "contrasena": "23232323423423423234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-05",
+        "correo": "agus@gmail.com",
+        "contrasena": "324234234"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-13",
+        "correo": "tino@gmail.com",
+        "contrasena": "132465748"
+    },
+    {
+        "nombre": "agustin",
+        "apellido": "cacrees",
+        "fecha_nac": "2025-09-03",
+        "correo": "agus@gmail.com",
+        "contrasena": "12346578"
+    },
+    {
+        "nombre": "mariano",
+        "apellido": "messi",
+        "fecha_nac": "1989-03-09",
+        "correo": "tino@gmail.com",
+        "contrasena": "234234234234"
+    },
+    {
+        "nombre": "carlos",
+        "apellido": "puzzi",
+        "fecha_nac": "2025-09-26",
+        "correo": "carlos@gmail.com",
+        "contrasena": "123456"
+    },
+    {
+        "nombre": "messi",
+        "apellido": "capo",
+        "fecha_nac": "2025-09-26",
+        "correo": "est.castro.valentin@latecnicalf.com.ar",
+        "contrasena": "23423234234"
+    },
+    {
+        "nombre": "valentin",
+        "apellido": "castro",
+        "fecha_nac": "2025-09-28",
+        "correo": "valen0156@gmail.com",
+        "contrasena": "03548"
+    },
+    {
+        "nombre": "ricardo",
+        "apellido": "alfonso",
+        "fecha_nac": "2025-10-12",
+        "correo": "ricardoalfonso@gmail.com",
+        "contrasena": "12345"
+    },
+    {
+        "nombre": "rocco",
+        "apellido": "bruno",
+        "fecha_nac": "2008-10-07",
+        "correo": "roccobp2008@gmail.com",
+        "contrasena": "rocco"
+    },
+    {
+        "nombre": "ivo",
+        "apellido": "spada",
+        "fecha_nac": "1996-08-03",
+        "correo": "ivo@gmail.com",
+        "contrasena": "ivo1234"
+    },
+    {
+        "nombre": "enzo",
+        "apellido": "ceballos",
+        "fecha_nac": "2005-12-21",
+        "correo": "enzocebee@gmail.com",
+        "contrasena": "46770150"
+    },
+    {
+        "nombre": "paula",
+        "apellido": "perez",
+        "fecha_nac": "1977-07-05",
+        "correo": "pauladanielaperez99@gmail.com",
+        "contrasena": "pau"
+    },
+    {
+        "nombre": "santos",
+        "apellido": "cepeda",
+        "fecha_nac": "0324-01-01",
+        "correo": "santoscepeda79@gmail.com",
+        "contrasena": "12345"
+    },
+    {
+        "nombre": "ignacio",
+        "apellido": "ceballos",
+        "fecha_nac": "2000-01-21",
+        "correo": "nacho@gmail.com",
+        "contrasena": "12345"
+    }
+]

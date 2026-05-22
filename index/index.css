@@ -1,0 +1,240 @@
+/*________________________________________________________________________*/
+* {/*se le aplica a todos los elementos*/
+    margin: 0;/*elimina margenes por defecto*/
+    padding: 0;/*elimina rellenos por defecto*/
+    box-sizing: border-box;/*le incluye bordes y un padding */
+}
+/*__________________________________________________________________________*/
+/*body*/
+body {
+    font-family: 'Courier New', Courier, monospace ;/*tipografia*/
+    background-color: #141414;/*color de fondo*/
+    color: #f5f5f5;/*color de texto*/
+    line-height: 1.6;/*espacipo entre lineas*/
+}
+/*_____________________________________________________________________________*/
+/*header principal*/
+header {
+    position: fixed;/*fija el header arriba*/
+    top: 0;/*pegado arriba*/
+    width: 100%;/*que ocupe todo el ancho*/
+    padding: 15px 40px;/*espaciados*/
+    display: flex;/*estos elementos alinean todo verticalmente*/
+    align-items: center;
+    background: rgba(10, 10, 10, 0.85);/*fondo del header con cierto grado de transpariencia*/
+    z-index: 1000;/*asegura que ningun elemento quede por encima que el header*/
+}
+/*________________________________________________________________________________*/
+/*intro para e cambio de imagen*/
+.intro {
+    height: 100vh;/*ocupa toda la altura de la pantalla y el vh es para que quede del mismo tamaño dependiendo la altura de la pantalla*/
+    display: flex;/*este elemento y los dos de abajo hacen que se centre*/
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;/*color de fondo*/
+    position: relative;/*se mueve el el "espacio" que deja no se puede ocupar con otra cosa*/
+}
+/*__________________________________________________________________________________*/
+/*el logo en base a la intro*/
+.logo-intro {
+    width: 700px;/*tamaño grande*/
+    max-width: 90%;/*para que no se salga de las pantallas que sean mas chicas*/
+    transition: all 0.6s ease;/**/
+}
+/*__________________________________________________________________________________________________*/
+/*intro cuando se hace scroll esto solo se actica si se hace scroll(esta hecho en el js)*/
+.intro.scrolled {
+    height: 90px;/*este elemento y los 3 de abajo hacen que se convierta e ub navbar*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: flex-start;/*alinea el logo hacia la izquierda*/
+    padding-left: 40px;/**/
+    z-index: 1000;/*estos dos elementos le agrega un efecti de desenfque*/
+
+    backdrop-filter: blur(10px);
+    background: rgba(10, 10, 10, 0.6);/*color de fondo*/
+}   
+/*_________________________________________________________*/
+/*esto hace que se achique el tamaño al hacer scroll*/
+.intro.scrolled .logo-intro {
+    width: 120px;
+}
+/*_____________________________________________________________________________________*/
+/*esto es la section principal*/
+.hero {
+    height: 100vh;/*lo mismo que antes, que ocuoe toda sin importar el tamaño */
+    display: flex;/*pone los elementos en una columna*/
+    flex-direction: column;
+    justify-content: center;/*centra los elementos*/
+    align-items: center;    
+    text-align: center;
+}
+/*_________________________________________________________________*/
+.hero h1 {
+    font-size: 50px;/*tamaño de la letra*/
+    letter-spacing: 2px;/*espacio entre lineas*/
+}
+/*_____________________________________________________________________________*/
+.hero p {
+    color: #a1a1aa;/*color*/
+    margin-top: 10px;
+    font-family:'Courier New', Courier, monospace ;/*tipografia*/
+}
+/*__________________________________________________________________________________________*/
+/*animacion de entrada*/
+.hero h1,
+.hero p {/*empieza invisible y desplazado*/
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+/*_________________________________________________________________________________________*/
+
+.hero.show h1,/*(esto esta en el js, se va apareciendo)*/
+.hero.show p {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*______________________________________________________________________*/
+
+.principal {
+    display: flex;/*organiza el contenido*/
+    justify-content: center;/*centra horizontalment*/
+    padding: 80px 20px;/*crea un espacio arriba abajo izquierda y derecha*/
+}
+
+.sobre-mi {
+    max-width: 700px;/*ancho maximo*/
+    background-color: #141414;/*fondo*/
+    padding: 25px;/*espacio interno*/
+    border-radius: 10px;/*bordes redondeados*/
+}
+
+.sobre-mi h2 {
+    margin-bottom: 10px;/*espacio por debajo del titulo*/
+    color: #e11d2e;/*color rojo*/
+}
+
+/*________________________________________________________________________________________________*/
+/*proyectos*/
+.proyectos {
+    padding: 60px 40px;/*espacio general*/
+    text-align: center;/*centra los textos*/
+}
+
+.proyectos h2 {
+    margin-bottom: 30px;/*separa el titulo del resto*/
+}
+.proyectos a{
+    color: #f5f5f5;
+    text-decoration: none;;
+}
+.proyectos img{
+    width:20vh;
+}
+/*__________________________________________________________________________________________________________*/
+/*seccion de cursos*/
+.cartas {/*pongo de nombres cartas para poder hacer al estilo de cartas como la de lando*/
+    display: flex;/*pone las tarjetas en fila*/
+    justify-content: center;/*pone las tarjetas centrdas*/
+    gap: 20px;/*espacio entre tarjetas*/
+}
+
+.cartas article {/*cada tarjeta*/
+    background-color: #141414;/*fondo oscuro*/
+    padding: 20px;/*espacio interno*/
+    border-radius: 10px;/*bordes redondeados*/
+    transition: 0.3s;/*suaviza las animaciones*/
+}
+
+.cartas article:hover {/*efecto al pasar el mouse sube 5px al pasar el mouse por arriab*/
+    transform: translateY(-5px);
+}
+
+.cartas a {
+    text-decoration: none;/*quita subrayado*/
+    color: #f5f5f5;/*texto en blanco*/
+}
+
+.cartas a:hover {
+    color: #e11d2e;/*cambia a color rojo cuando se pasa el mouse por arriba*/
+}
+/*__________________________________________________________________________________________________*/
+/*cursos*/
+.cursos {
+    padding: 60px 40px;/*espacio*/
+    text-align: center;/*centrado*/
+}
+
+.cursos h2 {
+    margin-bottom: 20px;/*para que tenga margen*/
+}
+
+.cursos .curso {
+    background-color: #0a0a0a;/*color*/
+    padding: 15px;/*espacio interno*/
+    margin: 10px auto;/*centrado horizontalmente*/
+    width: 200px;/*tamaño fijo*/
+    border-radius: 8px;/*bordes suaves*/
+}
+
+/*_______________________________________________________________________________________*/
+a[download] {/*selecciona los links que tengas el atributo dowload*/
+    display: block;
+    text-align: center;/*centra el texto*/
+    margin: 40px auto;/*lo centra*/
+    color: #f5f5f5;/*color del texto*/
+    text-decoration: none;/*quita subrayado*/
+    border: 1px solid #e11d2e;/*borde con color rojo*/
+    padding: 10px 20px;/*tamaño del boton*/
+    width: fit-content;/*el ancho se adapta al contenido*/
+    transition: 0.3s;/*leve animacion*/
+}
+
+a[download]:hover {
+    background-color: #e11d2e;/*se rellena de color rojo al pasar el mouse*/
+}
+/*_________________________________________________________________________________________________*/
+/*firma*/
+#firma {
+    display: block;/*permite centrar*/
+    margin: 40px auto;/*centrado horiontalmente*/
+    width: 500px;/*tamaño fijo*/
+}
+/*__________________________________________________________________________________________________________*/
+/*footer*/
+.pie {
+    background-color: #141414;/*color de fondo*/
+    padding: 30px;/*espacio entre los elementos*/
+    text-align: center;/*texto centrado*/
+    border: #e11d2e;
+    border-radius:0%;
+}
+
+
+
+.pie img {
+    width: 25px;/*tamaño de los logos*/
+    margin-right: 8px;/*que tengan un espacio entre el logo y el texto*/
+}
+
+.link a {
+    color: #f5f5f5;/*texto blanco*/
+    text-decoration: none;/*sin subrayado*/
+    font-size: 14px;/*tamaño del link*/
+}
+
+.link a:hover {
+    color: #e11d2e;/*cambia de color cuando se pasa el mouse*/
+}
+/*_____________________________________________________________________________________*/
+/*la palet de colores es:  
+#0a0a0a; negro profundo
+#141414; negro
+#e11d2e; rojo elegante
+#ff3b3b; rojo
+#f5f5f5; blanco suave
+#a1a1aa; gris claro
+#262626; gris oscuro
+*/
