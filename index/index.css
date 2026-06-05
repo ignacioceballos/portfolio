@@ -209,13 +209,34 @@ a[download]:hover {
 }
 /*_________________________________________________________________________________________________*/
 /*firma*/
-#firma {
-    display: block;/*permite centrar*/
-    margin: 40px auto;/*centrado horiontalmente*/
-    width: 500px;/*tamaño fijo*/
+/*Contenedor principal de la sección*/
+.efecto{
+    clip-path: inset(0 100% 0 0);/* recortta alguna parte del elemento y que laanimacion se haga haci laderecha     */
+    animation: escribir 6s linear forwards;//*Aplica la animacion "escribir"durante 6 segundos*/
 }
-/*__________________________________________________________________________________________________________*/
+
+@keyframes escribir{/*animacion escribir*/
+    to{/*equivale l 100% del svg */
+        clip-path: inset(0 0 0 0);/*es el estado final de la  animacion*/
+    }
+}
+/*_______________________________________________________________________________________________________*/
 /*footer*/
+@keyframes cambioBorde {
+  0%   { border-color: #1f1f1f; }
+  25%  { border-color: #C6A664; }
+  50%  { border-color: #f25c54; }
+  75%  { border-color: #a8e6cf; }
+  100% { border-color: #f5f5f5; }
+}
+@keyframes cambioBorder { 
+  0% { border-color: #1f1f1f; } 
+  25% { border-color: #ffc857; }
+  50% { border-color: #f25c54; } 
+  75% { border-color: #a8e6cf; }
+  100% { border-color: #f5f5f5; }
+} 
+
 .pie {
     background-color: #141414;/*color de fondo*/
     padding: 30px;/*espacio entre los elementos*/

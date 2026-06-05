@@ -31,3 +31,19 @@ window.addEventListener("scroll", function() {//esto detecta cuando el usuario h
         }, 200);
     }
 });
+//efecto de la firma
+
+const path = document.querySelector("svg path");//busca en todas las paginas los path que tengan svg y los guarda en la varuable path
+
+const largo = path.getTotalLength();//devulve lo largo que del svg
+
+path.style.strokeDasharray = largo;//es el patron delas  lineas
+path.style.strokeDashoffset = largo;//lo desplaza
+
+path.animate(//hace una animacion con una api
+    [{ strokeDashoffset: largo }, { strokeDashoffset: 0 }],//marca solo los los  fotogramas claves  
+    {
+        duration: 4000,//cuanto  tiempo tarda en hacer la animacion
+        fill: "forwards"//hace  que la animacion quede y que  no se "disuelva"
+    }
+);
